@@ -1,6 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import theorem_8 as th8
+from theorem8 import theorem_8 as th8
 import time
 from model import Monomial1HiddenNN
 
