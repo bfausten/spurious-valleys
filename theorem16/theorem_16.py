@@ -71,22 +71,22 @@ def main():
     # thin gray line per trial
     for t in range(1, allA.shape[0]):
         ax.plot(p_list, allA[t, :], linewidth=1.0, alpha=0.5, color="grey")
-    ax.plot(p_list, allA[0, :], linewidth=1.0, alpha=0.5, color="grey", label="Trials")
+    ax.plot(p_list, allA[0, :], linewidth=1.0, alpha=0.5, color="grey", label="Trials (100)")
 
     # bold median line
     ax.plot(p_list, medA, marker="o", linewidth=3.0, color="tab:blue",
-            label="Median R(W)")
+            label="Median $\mathcal{R}(W)^2$")
 
     # 1/p reference through the first median point
     ref = medA[0] * (np.array(p_list) / p_list[0]) ** (-1.0)
-    ax.plot(p_list, ref, ls="--", linewidth=1.6, color="tab:orange", label="1/p reference")
+    ax.plot(p_list, ref, ls="--", linewidth=1.6, color="tab:orange", label="1/$p$ reference")
 
-    ax.set_xlabel("width p")
-    ax.set_ylabel("approximation error  R(W)")
+    ax.set_xlabel("width $p$")
+    ax.set_ylabel("approximation error $\mathcal{R}(W)^2$")
     ax.set_title("Width vs. approximation error for random-features")
     ax.legend()
     plt.tight_layout()
-    plt.show()
+    plt.savefig("th16plot2.png")
 
 
 if __name__ == "__main__":
