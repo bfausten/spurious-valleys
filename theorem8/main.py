@@ -3,7 +3,7 @@ from theorem8 import theorem_8 as th8
 from model import Monomial1HiddenNN
 
 
-# for figure 1a
+# for figure 2a
 def main1():
     # data
     input_dim = 10
@@ -26,7 +26,7 @@ def main1():
     th8.plot_contours_grid(nets, x, y, w_histories)
 
 
-# for figure 1b
+# for figure 2b
 def main2():
     # data
     input_dim = 10
@@ -50,6 +50,3 @@ def main2():
         W, U, w_hist, l_hist = th8.train(net, x, y, epochs=2000, learning_rate=0.01, tol=1e-4)
         l_histories[key] = np.asarray(l_hist)
     th8.plot_loss_curves(l_histories)
-
-
-main1()
