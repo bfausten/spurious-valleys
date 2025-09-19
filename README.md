@@ -1,10 +1,10 @@
 # Spurious Valleys in Neural Loss Landscapes
 This repo serves as a collection of the code used for plots in my bachelor's thesis about the presence and absence of spurious 
 valleys in the loss landscape of neural networks. The thesis is based on the paper *Spurious Valleys in One-hidden-layer Neural Network Optimization Landscapes*
-by Venturi et al. (2019) [[paper](https://arxiv.org/abs/1902.01396)]. The code is written in Python and uses PyTorch.
+by Venturi et al. (2019) [[paper](https://jmlr.org/papers/v20/18-674.html)]. The code is written in Python and uses PyTorch.
 
 ## Requirements
-The code was tested with Python 3.11.12 and PyTorch 2.7.0. Other required packages are listed in `requirements.txt`. You can install them using pip or conda:
+The code was tested with Python 3.11.12. Other required packages are listed in `requirements.txt`. You can install them using pip or conda:
 ```bash
 pip install -r requirements.txt
 ```
