@@ -25,11 +25,11 @@ To run the experiments related to Theorem 8, navigate to the `theorem8` folder a
 The results will be saved in the `outputs_t8` folder. All helper functions are contained in `theorem_8.py`.
 
 ### Negative Result 1 (Section 3.2, Theorem 13 (Venturi et al. 2019))
-To run the experiments related to Theorem 13, navigate to the `theorem13` folder and run `theorem_13.py` (Figure 3).
+To run the experiments related to Theorem 13, navigate to the `theorem13` folder and run `theorem_13.py` (Figure 4).
 The results will be saved in the `outputs_t13` folder.
 
 ### Negative Result 2 (Section 3.3, Theorem 16 (Venturi et al. 2019))
-To run the experiments related to Theorem 16, navigate to the `theorem16` folder and run `theorem_16.py` (Figure 4).
+To run the experiments related to Theorem 16, navigate to the `theorem16` folder and run `theorem_16.py` (Figure 5).
 The results will be saved in the `outputs_t16` folder. All helper functions related to the dataset are contained in `th16data.py` and all helper functions for the model architecture and training are in `th16utils.py`.
 
 ## License
